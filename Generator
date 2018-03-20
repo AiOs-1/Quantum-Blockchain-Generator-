@@ -1,0 +1,162 @@
+import parser1
+(version 1- rough draft(version 2- final draft coming soon(in 1 day)))
+class crypt:
+    def Ai(self,a):
+        c = list(a)
+        self.c = c
+        k = self.masterlist()
+        k2 = self.grammer()
+        k3 = self.findme()
+        k4 = self.quantum_realm()
+        print(self.masterphile)
+        print(c)
+        print(self.binfolder)
+        print(self.binfolder2)
+        print(self.binfolder3)
+        print(self.binfolder4)
+        print(self.varcan)
+
+    #collecting integer variables from data(binfolder)     
+    def masterlist(self):
+        #temporarely storing integer
+        values = []
+        #multi-demensional array of values
+        masterphile = []
+        self.masterphile = masterphile
+        #string data from masterphile converted to integer
+        varcan = []
+        self.varcan = varcan
+        #counters
+        chat = 0
+        #Using binfolder to index places of integers
+        binfolder = []
+        self.binfolder = binfolder
+        for i in self.c:
+            chat += 1
+            if i in keychain1:
+                #indexing integer in binfolder
+                binfolder.append("--")
+                #adding integer temporarly
+                values.append(i)
+            else:
+                if i == "-":
+                    values.append(i)
+                else:
+                    #adding non integer to bin 
+                    binfolder.append(i)
+                    #adding values to multi-dem array
+                    masterphile.append(values)
+                    #resetting values for next set of integers
+                    values = []
+        #delete nulls in masterphile
+        t = [x for x in masterphile if x]
+        #varcan has the usable integers
+        for i in t:
+            if i[0] == "-":
+                pp = len(i)
+                if pp <= 1:
+                    varcan.append(-1)
+                else:
+                    lad = "".join(i[1:pp])
+                    negg = -int(lad)
+                    varcan.append(negg)
+            else:
+                er = len(i)
+                err = "".join(i[0:er])
+                negg1 = int(err)
+                varcan.append(negg1)
+
+    #replacing variables like "x" with a unique identifier(binfolder2)
+    def grammer(self):
+        binfolder2 = []
+        self.binfolder2 = binfolder2
+        #kf stores variable
+        kf = []
+        #ace creates multi-dem holding variable and unique identifier
+        kf1 = []
+        ace = []
+        #counter tells us if array has no entry
+        chat = 0
+        #counter tells us what variable in bruce to use next
+        vcat = 1
+
+        for i in self.binfolder:
+            if i in bruce1:
+                #initiating first variable in array
+                if chat == 0:
+                    kf.append(i)
+                    kf1.append(i)
+                    kf1.append(spk1[0])
+                    ace.append(kf1)
+                    kf1 = []
+                    chat += 1
+                #if variable already exist append unique identifier    
+                if i in kf:
+                    for t in range(len(kf)):
+                        if i in kf[t]:
+                            binfolder2.append(ace[t][1])
+                #if not create unique identifier
+                else:
+                    kf.append(i)
+                    kf1.append(i)
+                    kf1.append(spk1[vcat])
+                    binfolder2.append(spk1[vcat])
+                    vcat += 1
+                    ace.append(kf1)
+                    kf1 = []
+            #append all other values
+            else:
+                binfolder2.append(i)
+
+    #quantifying blockchain generator
+    def quantum_realm(self):
+        binfolder4 = []
+        self.binfolder4 = binfolder4
+        chat = 0
+        #After this point "+","-","/","*" no longer matter in our blockchain 
+        quantum = []
+        cube = []
+
+        for i in self.binfolder3:
+            chat+=1
+            if i in falcon1: 
+                binfolder4.append("#")
+                cube.append("#")
+                cube.append(i)
+                cube.append(chat-1)
+                quantum.append(cube)
+                cube = []
+            else:
+                binfolder4.append(i)
+                
+
+    #data mining binfolder array and replacing index
+    def findme(self):
+        binfolder3 = []
+        self.binfolder3 = binfolder3
+        chat = 0
+        chat1 = 0
+        chat2 = 0
+        for i in self.binfolder2:
+            if i == "--":
+                if chat == 0:
+                    chat += 1
+                    binfolder3.append(bruce1[chat1])
+                    chat1 += 1
+            if i in falcon1:
+                binfolder3.append(i)
+                chat2 += 1
+            if i in spk1:
+                binfolder3.append(i)
+                chat2 += 1
+            if chat2 >= 1:
+                if i == "--":
+                    binfolder3.append(bruce1[chat1])
+                    chat1 += 1 
+
+            
+                
+if __name__=='__main__':
+    object1 = crypt()
+    k = object1.Ai("-12x^2+4x-3")
+    
